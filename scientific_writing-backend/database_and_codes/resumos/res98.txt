@@ -1,0 +1,5 @@
+--{Apresentam-se dois modelos matemáticos de otimização os quais, considerando os dados do
+trânsito da região que se pretende otimizar, possibilitam fornecer tempos de verde que visam minimizar o tempo de percurso veicular.}-- Também são apresentados os resultados computacionais obtidos com
+a investigação desses modelos em um estudo realizado na região central da cidade de Passo Fundo, RS.
+--[Os resultados apontam para uma melhora significativa no fluxo veicular, dando respaldo a um possı́vel
+emprego destes modelos em situação real.]--

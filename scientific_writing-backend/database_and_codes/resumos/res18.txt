@@ -1,0 +1,7 @@
+A treliça é uma estrutura triangular rı́gida, com resistência aos esforços normais, podendo ser utilizada em telhados, mezaninos, torres de energia, de telecomunicações e pontes. Logo é possı́vel afirmar
+que esse sistema estrutural apresenta uma grande relevância no cenário da engenharia de estruturas. --{Nesta
+pesquisa é utilizado um método probabilı́stico de otimização global baseado em inteligência coletiva ou inteligência de enxame, com aplicações promissoras em diversos campos das ciências aplicadas, o Algoritmo
+de Colônia de Vagalumes (ACV), para determinação do peso mı́nimo de uma treliça de benchmark.}-- Foi
+conduzida uma análise de sensibilidade com os parâmetros do algoritmo como: população (Npop), número
+de iterações (Ngen), parâmetro de aleatoriedade α, fator de atratividade β e parâmetro de absorção de luz
+(γ). --[A treliça utilizada nos testes foi uma estrutura de benchmark com 10 barras e essa foi otimizada obtendo um valor de peso mı́nimo em torno de 2284 kg, tal valor quando comparado a outros trabalhos da literatura mostram a efetividade do método adotado nesse trabalho.]-- O software utilizado para as implementações e simulação das treliças foi o MATLAB®.

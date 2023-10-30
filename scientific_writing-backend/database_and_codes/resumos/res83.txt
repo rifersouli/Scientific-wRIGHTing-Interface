@@ -1,0 +1,6 @@
+--{Nesse trabalho, consideramos o método preditor-corretor, que é uma das variantes mais importante do método de pontos interiores devido à sua eficiência e convergência rápida.}-- No método preditorcorretor, é preciso resolver dois sistemas lineares a cada iteração para determinar a direção preditoracorretora. A resolução desses sistemas é o passo que requer mais tempo de processamento, devendo assim
+ser realizada de maneira eficiente. Para obter a solução dos sistemas lineares do método preditor-corretor
+consideramos dois métodos iterativos de Krylov: MINRES e método dos gradientes conjugados. Para que
+estes métodos convirjam mais rapidamente um pré-condicionador especialmente desenvolvido para os sistemas lineares oriundos dos métodos de pontos interiores é usado. Experimentos computacionais em um
+conjunto variado de problemas de programação linear foram realizados com o intuito de analisar a eficiência
+e robustez dos métodos de solução dos sistemas.

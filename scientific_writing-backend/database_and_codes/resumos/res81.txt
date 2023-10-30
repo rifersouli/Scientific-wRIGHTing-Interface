@@ -1,0 +1,11 @@
+O modo de operação batelada alimentada é reconhecido por amenizar os efeitos de inibição
+causados pelo produto e pelo substrato no processo de fermentação alcoólica. A otimização dinâmica deste
+processo para fins de maximização da sua produtividade, através do controle da vazão de alimentação do
+substrato, caracteriza um problema de controle ótimo singular de difı́cil solução devido a flutuação do
+ı́ndice diferencial. --{Neste trabalho, este problema de otimização é resolvido usando o Algoritmo de Colônia
+de Morcegos, técnica bio-inspirada na natureza que se fundamenta no comportamento social de colônias
+de morcegos.}-- Os resultados obtidos com este algoritmo são comparados a uma estratégia utilizada para a
+transformação do problema original em um de identificação de fases de ı́ndice diferencial flutuante e de
+tempos de transição entre elas. Na aplicação proposta são consideradas restrições na produtividade, na
+variável de controle e no volume do fermentador, para operação com tempo livre. São analisadas o efeito
+das restrições operacionais e das condições iniciais sobre os perfis ótimos.

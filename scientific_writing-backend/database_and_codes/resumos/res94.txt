@@ -1,0 +1,5 @@
+--{Este trabalho aborda o problema de dimensionamento de lotes em um ambiente com várias
+plantas.}-- Cada item pode ser produzido em qualquer planta e é possı́vel atender a demanda de uma determinada planta com produção proveniente de uma (ou várias outras) planta(s), para tanto, incorre-se um
+custo de transferência. --{O objetivo deste trabalho consiste em desenvolver formulações fortes para o problema.}-- São investigadas reformulações que baseiam-se no problema do caminho mı́nimo e localização de
+facilidades. Por fim, alguns resultados computacionais são apresentados comparando todas as formulações
+propostas.

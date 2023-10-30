@@ -1,0 +1,3 @@
+--{O objetivo deste trabalho foi comparar a eficácia dos modelos de Programação por Metas como ferramenta de regressão não linear, com os métodos de ajustes não lineares clássicos.}-- Aplicou-se os modelos
+a dados experimentais de inativação de Salmonella spp. em carne moı́da suı́na. A investigação da eficiência
+dos métodos foi realizada pelo cálculo do erro absoluto.

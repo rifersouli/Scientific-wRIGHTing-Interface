@@ -1,0 +1,5 @@
+--{Este artigo teve como objetivo principal avaliar os desempenhos dos estimadores dos Métodos
+dos Momentos Modificados para os parâmetros α e β da distribuição Birnbaum-Saunders e três versões
+corrigidas desses estimadores: a versão corrigida por viés, a corrigida por viés via jackknife e a versão
+corrigida por viés via bootstrap.}-- Simulações de Monte Carlo foram utilizadas para a realização do objetivo
+proposto através da verificação de algumas propriedades desses estimadores, a saber: média e erro.

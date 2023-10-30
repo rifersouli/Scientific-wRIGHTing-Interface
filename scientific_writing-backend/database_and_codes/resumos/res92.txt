@@ -1,0 +1,3 @@
+É descrito um modelo matemático com dependência temporal para a transmissão da dengue
+onde são considerados a população humana, o vetor mosquito e um único sorotipo circulando na população.
+--{Este modelo foi analisado com o objetivo de explicar a periodicidade da doença.}-- Foi utilizado um algoritmo genético para estudar a sensibilidade do modelo.

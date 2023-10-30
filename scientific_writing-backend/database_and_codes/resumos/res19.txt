@@ -1,0 +1,8 @@
+--{Neste trabalho foram desenvolvidos modelos matemáticos que permitem simular a produção de mel de uma determinada região.}-- Esses modelos são baseados em equações diferenciais ordinárias e
+tiveram como ponto de partida o modelo neoclássico de Lucas [23] para o crescimento macroeconômico. Na
+determinação dos parâmetros dos modelos foram utilizados métodos numéricos de otimização não linear.
+Como resultado da solução numérica do modelo, foram simuladas a produção de mel de quatro municı́pios.
+Obteve-se, ainda, o ı́ndice de tecnologia aplicado à produção de mel de cada localidade, por um perı́odo
+de onze anos. --[Por meio desse ı́ndice é possı́vel ordenar as municipalidades em termos de aplicação de
+tecnologia. Essa é uma das razões desse ı́ndice ser um indicador de vital importância para a gestão do
+agronegócio.]--

@@ -1,0 +1,1 @@
+Apresenta-se, neste artigo, o desenvolvimento completo de um sistema de navegação auxiliar baseado na Lógica Fuzzy para um robô móvel denominado Robô Ambiental Hı́brido Médio (RAHM). Apresenta-se também o projeto eletrônico e a programação do sistema de navegação. O desempenho deste sistema é avaliado frente ao do Sistema Principal de Navegação do RAHM.

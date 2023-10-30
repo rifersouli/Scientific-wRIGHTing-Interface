@@ -1,0 +1,5 @@
+A famı́lia de distribuições univariadas gama-generalizada proposta por Zografos e Balakrishnan [3] foi discutida por Nadarajah et al. [7] que deram um amplo tratamento matemático a esta classe.
+--{Neste artigo, estudamos o modelo Gama Weibull Poisson, que tem como casos especiais, várias distribuições discutidas na literatura.}-- Deduzimos uma expressão explı́cita para a entropia de Rényi, e mostramos
+que a densidade da distribuição Gama Weibull Poisson é uma mistura de densidades da distribuição Weibull
+Poisson. Estudamos algumas propriedades matemáticas importantes como momentos, função geratriz de
+momentos e função quantı́lica.

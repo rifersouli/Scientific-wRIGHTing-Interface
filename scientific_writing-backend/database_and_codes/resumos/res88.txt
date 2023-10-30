@@ -1,0 +1,6 @@
+--{O propósito deste trabalho é apresentar um operador genético desenvolvido a partir dos métodos
+matemáticos de extrapolação de curva.}-- Este operador irá auxiliar na produção de um indivı́duo melhor
+adaptado na população do algoritmo genético com codificação real, reconhecendo padrões inerentes aos
+genes dos cromossomos dos melhores indivı́duos de cada geração. O operador proposto em conjunto com
+o algoritmo genético de codificação real é comparado com cinco outros métodos diferentes de otimização
+aplicados a prospecção geoelétrica.

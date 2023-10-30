@@ -1,0 +1,5 @@
+Este artigo apresenta a metodologia para a solução de um problema de advecção e difusão bimodal unidimensional utilizando o Método de Diferenças Finitas. Além do termo de transporte advectivo
+e da difusão primária (que corresponde ao fluxo de Fick), a equação da difusão bimodal inclui um termo
+relativo à um fluxo secundário que é modelado por um termo diferencial de quarta ordem. O problema
+foi analisado para diferentes condições iniciais e de contorno, sendo os resultados compatı́veis com os
+apresentados em trabalhos anteriores da literatura.

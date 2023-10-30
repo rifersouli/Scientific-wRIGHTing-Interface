@@ -1,0 +1,8 @@
+--{Neste trabalho, comparamos duas versões precondicionadas do método dos gradientes conjugados.}-- Essas versões diferem da versão clássica, pois consideram que o sistema linear é um sistema de
+equações normais. Os sistemas lineares que iremos resolver surgem do cálculo das direções dos métodos
+de pontos interiores. A determinação desta direção consiste no passo de maior esforço computacional e,
+quando trabalhamos com sistemas de grande porte, o uso de métodos diretos pode ser inviável. Portanto,
+uma opção é utilizar métodos iterativos precondicionados. Assim, o desempenho de duas versões do método
+dos gradientes conjugados precondicionado é comparado à versão clássica que já foi utilizada, neste mesmo
+contexto, em trabalhos anteriores. --[Resultados numéricos mostram que uma dessas versões é competitiva
+em relação à versão clássica.]--

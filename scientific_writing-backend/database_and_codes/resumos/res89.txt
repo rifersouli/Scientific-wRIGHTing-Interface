@@ -1,0 +1,13 @@
+A ionossonda digital é um dos instrumentos que mede a densidade eletrônica da baixa ionosfera,
+através de rádio frequência, obtendo como resultado espectros de frequência em função da altura chamados
+ionogramas. A ionosfera pode ser analisada estudando-se alguns parâmetros crı́ticos que indicam a altura
+da base da camada F(h’F), a frequência com o pico de densidade eletrônica na camada F (foF2) e a altura do
+pico de densidade eletrônica na camada F(hpF2). Até o presente momento, estes parâmetros são extraı́dos
+dos ionogramas de uma forma manual e dependente da interpretação de um analista. Devido à grande
+quantidade de dados coletados pelas ionossondas necessita-se de uma automatização deste processo de
+coleta e análise. --{Este trabalho propõe um modelo de apoio à decisão para o processo de análise dos dados
+coletados por ionossondas com o propósito de elevar a capacidade de compilação dos dados ionosféricos.}-- A
+implementação do modelo de apoio à decisão foi estruturada em duas partes: a primeira parte propõe uma
+abordagem de lógica nebulosa para o problema de associação de dados, considerando as diferentes camadas
+ionosféricas. A segunda parte propõe o emprego de relação nebulosa como estrutura para a construção das
+regras de um sistema nebuloso especialista. Este trabalho apresenta apenas a primeira parte do modelo.

@@ -1,0 +1,4 @@
+--{Considerando um sistema de equações diferenciais envolvendo populações de duas espécies interagentes, analisamos um modelo contı́nuo SIR de transmissão de dengue.}-- Descrevemos o comportamento
+de humanos susceptı́veis, humanos infectados e mosquitos infectados no limite assintótico do modelo. Efetuamos simulações numéricas com parâmetros ajustados à microrregião do sudoeste da Bahia entre os anos
+de 2008 e 2012, comparando com dados reais. Discutimos os pontos de equilı́brio do modelo no contexto
+da microregião estudada.

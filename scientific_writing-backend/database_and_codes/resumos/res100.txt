@@ -1,0 +1,3 @@
+A computação da confiabilidade envolve números reais, o que gera problemas numéricos decorrentes das limitações encontradas na manipulação de reais em máquinas digitais. --{Este trabalho propõe
+um método, implementado no Matlab utilizando a biblioteca Intlab, para a obtenção de intervalos que encapsulam valores de confiabilidade real de sistemas com processo Exponencial de falhas, controlando erros
+numéricos.}-- O software SHARPE foi empregado para validar o método implementado.

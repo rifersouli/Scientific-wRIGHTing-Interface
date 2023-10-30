@@ -1,0 +1,3 @@
+Modelos probabilı́sticos de misturas finitas de densidades cujas componentes são as densidades da distribuição de Valor Extremal Generalizado tem uma ampla aplicabilidade em diversas áreas como
+finanças e hidrologia. --{Neste trabalho, os estimadores dos parâmetros da mistura de duas componentes GEV
+são obtidos via o algoritmo EM.}-- Apresentamos também ilustrações numéricas do comportamento dos estimadores obtidos através de simulação, bem como uma aplicação a dados reias.

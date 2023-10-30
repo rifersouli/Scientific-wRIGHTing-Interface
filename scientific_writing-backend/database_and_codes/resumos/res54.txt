@@ -1,0 +1,1 @@
+--{Este trabalho tem como objetivo utilizar a formulação integral de contorno na construção de um método numérico para modelar a propagação de ondas internas na interface entre dois fluidos.}-- Apresentamos vários exemplos numéricos para ilustrar a acurácia do método proposto e também mostrar sua utilidade na simulação das interações de ondas não lineares.

@@ -1,0 +1,4 @@
+--{O objetivo deste trabalho é por meio de grafos trivalentes obter emparelhamentos de arestas
+para polı́gonos hiperbólicos regulares conduzindo a superfı́cies de Riemann orientadas e compactas.}-- Neste
+trabalho, apresenta-se um procedimento para a obtenção de três casos de emparelhamentos generalizados
+relacionados à tesselação {12g − 6, 3}.
