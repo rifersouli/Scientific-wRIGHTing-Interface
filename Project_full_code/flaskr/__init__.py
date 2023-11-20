@@ -1,6 +1,9 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template, request, url_for, redirect
+from flask_sqlalchemy import SQLAlchemy
+from . models import db, Resumo, Objetivo, Conclusao
+from . views import index, resumo
 
 def create_app(test_config=None):
     # cria e confirgura o app
@@ -10,10 +13,10 @@ def create_app(test_config=None):
     app_site.config.from_mapping(
         SECRET_KEY='dev',
     )
-    app_site.config()
-    app_site.config['SQLALCHEMY_DATABASE_URI'] = 'mariadb://root:123@localhost:3306/tcc_zilli'
+    app_site.config['SQLALCHEMY_DATABASE_URI'] = 'mariadb+mariadbconnector://root:123@localhost:3306/tcc_zilli'
     app_site.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+    db.init_app(app_site)
 
     if test_config is None:
         # carrega a instância config, se ela existe, quando não se está testando
@@ -31,9 +34,9 @@ def create_app(test_config=None):
     # uma página para testar a aplicação
     @app_site.route('/teste')
     def teste():
-        return 'Se você está lendo isso, está funcionando.'
-
-    from . import db
-    db.init_app(app_site)    
+        return '<h1>Se você está lendo isso, está funcionando.</h1>' 
+    
+    app_site.register_blueprint(index.bp)
+    app_site.register_blueprint(resumo.bp)
 
     return app_site
