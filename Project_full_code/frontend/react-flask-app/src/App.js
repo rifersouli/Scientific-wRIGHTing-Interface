@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import logo from './LogotipoScientificWrighting.png';
 import './App.css';
+import BotoesResumos from './components/BotoesResumos';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div className="App-body">
+
+        <div className="App-text">
+          <p><mark>ㅤEscolha um resumo para treinar sua escrita científica:ㅤㅤㅤㅤㅤㅤ</mark></p>
+        </div>
+        
+        <BotoesResumos />
+      </div>
+
     </div>
   );
 }

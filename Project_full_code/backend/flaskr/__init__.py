@@ -2,6 +2,7 @@ import os
 
 from flask import Flask, render_template, request, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 from . models import db, Resumo, Objetivo, Conclusao
 from . views import index, resumo
 
@@ -39,5 +40,6 @@ def create_app(test_config=None):
     
     app_site.register_blueprint(index.bp)
     app_site.register_blueprint(resumo.bp)
+    CORS(app_site)
 
     return app_site
