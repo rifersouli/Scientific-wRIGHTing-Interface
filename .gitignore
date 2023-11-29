@@ -1,1 +1,3 @@
-./LogotipoScientificWrighting.png
+# Ignorar todas as imagens
+
+*.png
