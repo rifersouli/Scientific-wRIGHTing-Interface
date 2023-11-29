@@ -4,4 +4,4 @@ Science education tool designed as Completion Work of the Bachelor's Degree in C
 
 Now with a graphic interface under development.
 
-![Scientific wRIGHThing](LogotipoScientificWrighting.png)
+![Scientific wRIGHThing](Other_files/LogotipoScientificWrighting.png)
