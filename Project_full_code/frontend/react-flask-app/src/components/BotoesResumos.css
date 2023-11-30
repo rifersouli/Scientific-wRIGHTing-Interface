@@ -1,6 +1,6 @@
 .Botoes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 2vh;
     padding-left: 6.6vh;
     padding-right: 6.6vh;
@@ -25,4 +25,19 @@
 .Botoes:hover {
     background-color: #7d7d7d;
     box-shadow: 1vh 1vh #636363 inset;
+}
+
+.BotaoNenhumaAlternativa {
+    background-color: #a0a0a0;
+    color: #eaf7f6;
+    border-radius: 2vh;
+    border: none;
+    box-shadow: 0.7vh 0.7vh #bfcccb;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.BotaoNenhumaAlternativa:hover {
+    background-color: #ff8b00;
+    box-shadow: 0.7vh 0.7vh #b46503 inset;
 }
