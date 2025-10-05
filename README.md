@@ -13,7 +13,7 @@
 
 ```bash
 git clone <your-repository-url>
-cd Scientific-wRIGHTing-Interface-main
+cd Scientific-wRIGHTing-Interface-main/Project_full_code
 ```
 
 ### 2. Setup do Backend
