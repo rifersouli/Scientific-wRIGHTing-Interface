@@ -1,4 +1,5 @@
-# Uma interface para o projeto Scientific wRIGHTing - Guia de incialização
+# Uma interface para o projeto Scientific wRIGHTing
+# Guia de incialização
 
 ## Quick Start
 
