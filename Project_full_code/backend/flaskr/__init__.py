@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from . models import db, Resumo, Objetivo, Conclusao
-from . views import index, resumo
+from . views import index, resumo, analysis
 
 def create_app(test_config=None):
     # cria e confirgura o app
@@ -14,9 +14,10 @@ def create_app(test_config=None):
     app_site.config.from_mapping(
         SECRET_KEY='dev',
     )
-    app_site.config['SQLALCHEMY_DATABASE_URI'] = 'mariadb+mariadbconnector://root:123@localhost:3306/tcc_zilli'
+    app_site.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/tcc_zilli?charset=utf8mb4'
     app_site.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app_site.config['SQLALCHEMY_ECHO'] = False
+    app_site.config['JSON_AS_ASCII'] = False
 
     db.init_app(app_site)
 
@@ -40,6 +41,7 @@ def create_app(test_config=None):
     
     app_site.register_blueprint(index.bp)
     app_site.register_blueprint(resumo.bp)
+    app_site.register_blueprint(analysis.bp)
     CORS(app_site)
 
     return app_site

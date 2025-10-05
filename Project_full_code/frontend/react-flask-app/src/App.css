@@ -9,13 +9,6 @@
   pointer-events: none;
 }
 
-/* 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-header {
   background-color: #eaf7f6;
   min-height: 5vh;
@@ -42,26 +35,25 @@
   text-align: left;
   padding-top: 2vh;
   margin: 3vh;
-  margin-left: 9vh;
+  margin-left: 10.6vh;
   font-weight: bold;
 }
 
-.App-text mark {
-  background-color: #53c0bb;
+.App-text-container {
+  /* background-color: #5ec0bb; */
+  background-color: #ff8a14;
   color: #eef7f6;
-  padding: 0.5vh;
+  padding: 0.5vh 1.5vh;
+  margin-top: 2vh;
   border-radius: 0.7vh;
+  display: inline-block;
+  min-width: 95.1%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
 }
 
 .App-link {
   color: #61dafb;
 }
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

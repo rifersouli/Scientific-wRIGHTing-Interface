@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './BotoesResumos.css';
 import CaixaDialogo from './CaixaDialogo';
@@ -8,6 +8,7 @@ const BotoesResumos = () => {
   const [resumos, setResumos] = useState([]);
   const [modalAberto, abrirModal] = useState(false);
   const [resumoSelecionado, setResumoSelecionado] = useState(null);
+  const lastClickTimeRef = useRef(0);
 
   const handleModalAberto = (resumo) => {
     setResumoSelecionado(resumo);
@@ -29,7 +30,17 @@ const BotoesResumos = () => {
   }, []);
 
   const handleButtonClick = (resumoId) => {
-    console.log(`Botão clicado para o id do resumo: ${resumoId}`);
+    const now = Date.now();
+    const timeSinceLastClick = now - lastClickTimeRef.current;
+    
+    // Debounce: ignore clicks within 300ms of the last click
+    if (timeSinceLastClick < 300) {
+      console.log('Click ignored due to debouncing');
+      return;
+    }
+    
+    lastClickTimeRef.current = now;
+    
     const resumo = resumos.find((r) => r.id === resumoId);
     if (resumo) {
       handleModalAberto(resumo);

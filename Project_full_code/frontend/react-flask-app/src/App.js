@@ -13,7 +13,9 @@ function App() {
       <div className="App-body">
 
         <div className="App-text">
-          <p><mark>ㅤEscolha um resumo para treinar sua escrita científica:ㅤㅤㅤㅤㅤㅤ</mark></p>
+          <div className="App-text-container">
+            Escolha um resumo para treinar sua escrita científica:
+          </div>
         </div>
 
         <BotoesResumos />

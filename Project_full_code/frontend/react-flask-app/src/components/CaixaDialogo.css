@@ -1,0 +1,313 @@
+/* Modal Dialog Styles */
+.modal-dialog {
+    max-height: 90vh !important;
+    overflow: auto !important;
+}
+
+/* Dialog Title Styles */
+.modal-dialog-title {
+    padding-right: 3rem !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Typography Styles */
+.modal-title {
+    margin-bottom: 1rem !important;
+}
+
+.modal-instructions {
+    margin-bottom: 1rem !important;
+}
+
+.modal-completion-title {
+    margin-bottom: 0rem !important;
+}
+
+.modal-completion-text {
+    margin-bottom: 1.5rem !important;
+}
+
+.modal-result-text {
+    margin-bottom: 0.5rem !important;
+}
+
+.modal-result-detail {
+    margin-bottom: 0.5rem !important;
+}
+
+/* Sentence Selection Styles */
+.sentence-container {
+    margin-bottom: 1.5rem !important;
+}
+
+.sentence-option {
+    padding: 1rem !important;
+    margin-bottom: 0.5rem !important;
+    border: none !important;
+    /* border-color: #d1d5db !important; */
+    border-radius: 0.375rem !important;
+    cursor: pointer !important;
+    background-color: none !important;
+    /* background-color: #f9fafb !important; */
+    transition: all 0.2s ease !important;
+}
+
+.sentence-option:hover {
+    background-color: #6ad8d24f !important;
+}
+
+.sentence-option.selected {
+    background-color: #6ad8d2c9 !important;
+    position: relative !important;
+}
+
+.sentence-option.selected::before {
+    position: absolute !important;
+    top: 0.5rem !important;
+    right: 0.5rem !important;
+    color: #2196f3 !important;
+    font-weight: bold !important;
+    font-size: 1.2rem !important;
+}
+
+.sentence-option.selected:hover {
+    
+    background-color: #6ad8d281 !important;
+}
+
+.sentence-option.correct {
+    background-color: #c8e6c9 !important;
+    border-color: #4caf50 !important;
+    color: #2e7d32 !important;
+}
+
+.sentence-option.incorrect {
+    background-color: #ffcdd2 !important;
+    border-color: #f44336 !important;
+    color: #c62828 !important;
+}
+
+/* None Option Styles */
+.none-option {
+    padding: 1rem !important;
+    margin-bottom: 0 !important;
+    border: none !important;
+    /* border-color: #d1d5db !important; */
+    border-radius: 0.375rem !important;
+    cursor: pointer !important;
+    background-color: none !important;
+    /* background-color: #f9fafb !important; */
+    transition: all 0.2s ease !important;
+}
+
+.none-option:hover {
+    background-color: #6ad8d24f !important;
+}
+
+.none-option.selected {
+    background-color: #6ad8d2c9 !important;
+}
+
+.none-option.selected:hover {
+    background-color: #6ad8d281 !important;
+}
+
+.none-option.correct {
+    background-color: #c8e6c9 !important;
+    border-color: #4caf50 !important;
+}
+
+.none-option.incorrect {
+    background-color: #ffcdd2 !important;
+    border-color: #f44336 !important;
+}
+
+.none-option-text.correct {
+    color: #2e7d32 !important;
+}
+
+.none-option-text.incorrect {
+    color: #c62828 !important;
+}
+
+.none-option-subtext.correct {
+    color: #2e7d32 !important;
+}
+
+.none-option-subtext.incorrect {
+    color: #c62828 !important;
+}
+
+.none-option-text {
+    font-weight: bold !important;
+}
+
+/* Button Container Styles */
+.button-container {
+    margin-bottom: 1.5rem !important;
+}
+
+.button-container-centered {
+    display: flex !important;
+    gap: 1rem !important;
+    justify-content: center !important;
+}
+
+.button-container-centered-verify {
+    position: sticky !important;
+    bottom: 0 !important;
+    background-color: #eaf7f6 !important;
+    padding-top: 1.5rem !important;
+    display: flex !important;
+    gap: 1rem !important;
+    justify-content: center !important;
+}
+
+/* Result Box Styles */
+.result-box {
+    padding: 1rem !important;
+    border-radius: 0.375rem !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.result-box.success {
+    background-color: #c3e7c5 !important;
+}
+
+.result-box.error {
+    background-color: #f7c1c1 !important;
+}
+
+/* Modal action buttons styled to match index page buttons */
+.modal-action-button {
+    background-color: #a0a0a0 !important;
+    color: #eaf7f6 !important;
+    border: none !important;
+    padding: 1.5vh 3vh !important;
+    border-radius: 1.5vh !important;
+    box-shadow: 1vh 1vh #d0dddc !important;
+    font-weight: bold !important;
+    text-transform: none !important;
+    font-size: 1.1rem !important;
+    transition: all 0.2s ease !important;
+    margin-bottom: 1rem !important;
+}
+
+.modal-action-button:hover {
+    background-color: #7d7d7d !important;
+    box-shadow: 1vh 1vh #636363 inset !important;
+}
+
+/* Specific button variants */
+.modal-verify-button {
+    background-color: #ff8a14 !important;
+    box-shadow: 1vh 1vh #d0dddc !important;
+}
+
+.modal-verify-button:hover {
+    background-color: #e97c10 !important;
+    box-shadow: 1vh 1vh #b8640f inset !important;
+}
+
+.modal-next-button {
+    background-color: #ff8a14 !important;
+    box-shadow: 1vh 1vh #d0dddc !important;
+}
+
+.modal-next-button:hover {
+    background-color: #e97c10 !important;
+    box-shadow: 1vh 1vh #b8640f inset !important;
+}
+
+.modal-close-button {
+    background-color: #ff8a14 !important;
+    box-shadow: 1vh 1vh #d0dddc !important;
+}
+
+.modal-close-button:hover {
+    background-color: #e97c10 !important;
+    box-shadow: 1vh 1vh #b8640f inset !important;
+}
+
+.modal-result-chip {
+    background-color: #3c9eee !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10vh !important;
+    font-weight: 500 !important;
+}
+
+/* Divider between sentence options and result */
+.modal-divider {
+    width: 100% !important;
+    height: 1px !important;
+    background-color: #d0dddc !important;
+    background: #d0dddc !important;
+    flex-shrink: 0 !important;
+    overflow: visible !important;
+}
+
+/* Abstract overview highlighting */
+.abstract-overview {
+    margin: 1.5rem 0 0 0 !important;
+    padding: 1rem !important;
+    background-color: #f8f9fa !important;
+    border-radius: 0.5rem !important;
+}
+
+.abstract-overview-text {
+    line-height: 1.6 !important;
+    text-align: justify !important;
+}
+
+.abstract-objective {
+    background-color: #ff891498 !important;
+    color: #663905 !important;
+    padding: 0.02rem 0.2rem !important;
+    border-radius: 0.25rem !important;
+    font-weight: 500 !important;
+}
+
+.abstract-conclusion {
+    background-color: #6ad8d298 !important;
+    color: #065361 !important;
+    padding: 0.02rem 0.2rem !important;
+    border-radius: 0.25rem !important;
+    font-weight: 500 !important;
+}
+
+/* Abstract legend styling */
+.abstract-legend {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    padding: 0.75rem !important;
+    background-color: none !important;
+    border-radius: 0.5rem !important;
+}
+
+.legend-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.legend-color {
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 0.25rem !important;
+    flex-shrink: 0 !important;
+}
+
+.legend-objective {
+    background-color: #ff891498 !important;
+}
+
+.legend-conclusion {
+    background-color: #6ad8d298 !important;
+}
+
+
