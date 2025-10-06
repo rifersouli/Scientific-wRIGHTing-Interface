@@ -1,5 +1,4 @@
-# Uma interface para o projeto Scientific wRIGHTing
-# Guia de incialização
+# Uma interface para o projeto Scientific wRIGHTing - Guia de incialização
 
 ## Quick Start
 
@@ -13,7 +12,7 @@
 
 ```bash
 git clone <your-repository-url>
-cd Scientific-wRIGHTing-Interface-main/Project_full_code
+cd Scientific-wRIGHTing-Interface-main
 ```
 
 ### 2. Setup do Backend
@@ -27,11 +26,16 @@ pip install -r requirements.txt
 
 # Faça o setup do banco de dados
 mysql -u root -p
-CREATE DATABASE tcc_zilli CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 exit
 
-# Carregue o schema
-mysql -u root -p tcc_zilli < flaskr/schema.sql
+# Carregue o schema, e então os inserts no schema
+mysql -u root -p tcc_sw < flaskr/schema.sql
+mysql -u root -p tcc_sw < inserts.sql
+
+# É possível que o Windows Powershell não aceite o caractere '<', então use isso no lugar:
+cmd.exe /c "mysql -u root -p tcc_sw < flaskr/schema.sql"
+cmd.exe /c "mysql -u root -p tcc_sw < inserts.sql"
 
 # Inicie o servidor do Flask
 python app.py
