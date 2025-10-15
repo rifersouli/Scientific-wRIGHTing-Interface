@@ -8,6 +8,31 @@
 - Node.js 16+
 - MySQL/MariaDB
 
+### Setup Automatizado (Recomendado)
+
+Para uma instalação mais fácil, use os scripts de setup:
+
+**Windows:**
+```bash
+./setup.bat
+```
+
+**Linux/macOS:**
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+Os scripts irão (eu espero):
+- Verificar se todas as dependências estão instaladas
+- Configurar o ambiente Python e instalar dependências
+- Instalar dependências do Node.js
+- Criar o banco de dados automaticamente
+- Carregar o schema e os dados
+- Fornecer instruções para iniciar a aplicação
+
+### Setup Manual
+
 ### 1. Clone o repositório
 
 ```bash
@@ -24,12 +49,13 @@ cd backend
 # Instale as dependências do Python
 pip install -r requirements.txt
 
-# Faça o setup do banco de dados
+# O banco de dados será configurado automaticamente pelos scripts de setup
+# Se preferir configurar manualmente, execute os comandos abaixo:
 mysql -u root -p
 CREATE DATABASE tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 exit
 
-# Carregue o schema, e então os inserts no schema
+# E então:
 mysql -u root -p tcc_sw < flaskr/schema.sql
 mysql -u root -p tcc_sw < inserts.sql
 

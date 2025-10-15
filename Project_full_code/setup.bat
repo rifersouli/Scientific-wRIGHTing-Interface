@@ -47,15 +47,52 @@ echo [INFO] Frontend setup complete ✓
 
 cd ..\..
 
-echo [STEP] 3. Database setup instructions...
+echo [STEP] 3. Setting up MySQL database...
 echo.
-echo [INFO] Please run these commands to set up the database:
-echo.
-echo mysql -u root -p
-echo CREATE DATABASE tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-echo exit
-echo.
-echo mysql -u root -p tcc_sw ^< backend\flaskr\schema.sql
+
+REM Check if MySQL is installed
+mysql --version >nul 2>&1
+if errorlevel 1 (
+    echo [ERROR] MySQL is not installed or not in PATH. Please install MySQL/MariaDB and try again.
+    echo [INFO] Download from: https://dev.mysql.com/downloads/
+    pause
+    exit /b 1
+)
+
+echo [INFO] Creating database 'tcc_sw'...
+mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>nul
+if errorlevel 1 (
+    echo [WARNING] Failed to create database. Please ensure MySQL is running and root password is correct.
+    echo [INFO] You can manually create the database later with:
+    echo mysql -u root -p -e "CREATE DATABASE tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+    echo.
+) else (
+    echo [INFO] Database 'tcc_sw' created successfully ✓
+)
+
+echo [INFO] Loading database schema...
+mysql -u root -p tcc_sw ^< backend\flaskr\schema.sql 2>nul
+if errorlevel 1 (
+    echo [WARNING] Failed to load schema. Please ensure the database exists and root password is correct.
+    echo [INFO] You can manually load the schema later with:
+    echo mysql -u root -p tcc_sw ^< backend\flaskr\schema.sql
+    echo.
+) else (
+    echo [INFO] Database schema loaded successfully ✓
+)
+
+echo [INFO] Loading database data...
+mysql -u root -p tcc_sw ^< backend\inserts.sql 2>nul
+if errorlevel 1 (
+    echo [WARNING] Failed to load data. Please ensure the database exists and root password is correct.
+    echo [INFO] You can manually load the data later with:
+    echo mysql -u root -p tcc_sw ^< backend\inserts.sql
+    echo.
+) else (
+    echo [INFO] Database data loaded successfully ✓
+)
+
+echo [INFO] Database setup complete ✓
 echo.
 
 echo [STEP] 4. Starting the application...

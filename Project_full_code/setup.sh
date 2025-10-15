@@ -83,15 +83,49 @@ print_status "Frontend setup complete ✓"
 
 cd ../..
 
-print_step "3. Database setup instructions..."
+print_step "3. Setting up MySQL database..."
 
-print_status "Please run these commands to set up the database:"
-echo ""
-echo -e "${YELLOW}mysql -u root -p${NC}"
-echo -e "${YELLOW}CREATE DATABASE tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;${NC}"
-echo -e "${YELLOW}exit${NC}"
-echo ""
-echo -e "${YELLOW}mysql -u root -p tcc_sw < backend/flaskr/schema.sql${NC}"
+# Check if MySQL is installed
+if ! command -v mysql &> /dev/null; then
+    print_error "MySQL is not installed or not in PATH. Please install MySQL/MariaDB and try again."
+    print_warning "You can install it with:"
+    print_warning "  Ubuntu/Debian: sudo apt-get install mysql-server"
+    print_warning "  macOS: brew install mysql"
+    print_warning "  Windows: Download from https://dev.mysql.com/downloads/"
+    exit 1
+fi
+
+print_status "Creating database 'tcc_sw'..."
+if mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null; then
+    print_status "Database 'tcc_sw' created successfully ✓"
+else
+    print_warning "Failed to create database. Please ensure MySQL is running and root password is correct."
+    print_warning "You can manually create the database later with:"
+    echo -e "${YELLOW}mysql -u root -p -e \"CREATE DATABASE tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\"${NC}"
+    echo ""
+fi
+
+print_status "Loading database schema..."
+if mysql -u root -p tcc_sw < backend/flaskr/schema.sql 2>/dev/null; then
+    print_status "Database schema loaded successfully ✓"
+else
+    print_warning "Failed to load schema. Please ensure the database exists and root password is correct."
+    print_warning "You can manually load the schema later with:"
+    echo -e "${YELLOW}mysql -u root -p tcc_sw < backend/flaskr/schema.sql${NC}"
+    echo ""
+fi
+
+print_status "Loading database data..."
+if mysql -u root -p tcc_sw < backend/inserts.sql 2>/dev/null; then
+    print_status "Database data loaded successfully ✓"
+else
+    print_warning "Failed to load data. Please ensure the database exists and root password is correct."
+    print_warning "You can manually load the data later with:"
+    echo -e "${YELLOW}mysql -u root -p tcc_sw < backend/inserts.sql${NC}"
+    echo ""
+fi
+
+print_status "Database setup complete ✓"
 echo ""
 
 print_step "4. Starting the application..."
