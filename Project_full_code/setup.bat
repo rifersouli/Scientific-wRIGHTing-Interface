@@ -52,10 +52,10 @@ echo.
 echo [INFO] Please run these commands to set up the database:
 echo.
 echo mysql -u root -p
-echo CREATE DATABASE tcc_zilli CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+echo CREATE DATABASE tcc_sw CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 echo exit
 echo.
-echo mysql -u root -p tcc_zilli ^< backend\flaskr\schema.sql
+echo mysql -u root -p tcc_sw ^< backend\flaskr\schema.sql
 echo.
 
 echo [STEP] 4. Starting the application...

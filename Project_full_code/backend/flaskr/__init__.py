@@ -14,7 +14,7 @@ def create_app(test_config=None):
     app_site.config.from_mapping(
         SECRET_KEY='dev',
     )
-    app_site.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/tcc_zilli?charset=utf8mb4'
+    app_site.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/sw?charset=utf8mb4'
     app_site.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app_site.config['SQLALCHEMY_ECHO'] = False
     app_site.config['JSON_AS_ASCII'] = False
