@@ -14,7 +14,7 @@ Para uma instalação mais fácil, use os scripts de setup:
 
 **Windows:**
 ```bash
-./setup.bat
+.\setup.bat
 ```
 
 **Linux/macOS:**
