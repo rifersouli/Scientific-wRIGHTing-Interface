@@ -89,11 +89,14 @@ if exist "node_modules" (
     echo [INFO] Installing Node.js dependencies...
     echo [DEBUG] Current directory: %CD%
     echo [DEBUG] Running: npm install
-    npm install --verbose --no-audit --no-fund
+
+    REM Use CALL to ensure the script waits for npm install to finish.
+    CALL npm install --verbose --no-audit --no-fund
     if errorlevel 1 (
         echo [ERROR] Failed to install Node.js dependencies.
         echo [INFO] Trying alternative installation method...
-        npm install --legacy-peer-deps --no-audit --no-fund
+        
+        CALL npm install --legacy-peer-deps --no-audit --no-fund
         if errorlevel 1 (
             echo [ERROR] Both npm install methods failed.
             echo [INFO] Please check your internet connection and try running 'npm install' manually.
