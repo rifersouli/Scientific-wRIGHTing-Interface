@@ -128,20 +128,5 @@ fi
 print_status "Database setup complete ✓"
 echo ""
 
-print_step "4. Starting the application..."
-
-print_status "To start the application:"
+print_status "Setup complete! Run the start.sh file to start the application."
 echo ""
-echo -e "${GREEN}# Terminal 1 - Backend:${NC}"
-echo -e "${YELLOW}cd backend${NC}"
-echo -e "${YELLOW}source venv/bin/activate${NC}"
-echo -e "${YELLOW}python app.py${NC}"
-echo ""
-echo -e "${GREEN}# Terminal 2 - Frontend:${NC}"
-echo -e "${YELLOW}cd frontend/react-flask-app${NC}"
-echo -e "${YELLOW}npm start${NC}"
-echo ""
-
-print_status "🎉 Setup complete!"
-print_status "Backend will be available at: http://localhost:5000"
-print_status "Frontend will be available at: http://localhost:3000"

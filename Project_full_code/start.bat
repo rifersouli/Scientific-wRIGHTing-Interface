@@ -1,5 +1,5 @@
 @echo off
-echo 🎓 Starting Scientific Writing Training Interface...
+echo Starting Scientific Writing Training Interface...
 
 echo.
 echo [INFO] Starting Flask backend...
@@ -14,7 +14,7 @@ echo [INFO] Starting React frontend...
 start "React Frontend" cmd /k "cd frontend\react-flask-app && npm start"
 
 echo.
-echo [INFO] 🎉 Both services are starting!
+echo [INFO] Both services are starting!
 echo [INFO] Backend: http://localhost:5000
 echo [INFO] Frontend: http://localhost:3000
 echo.
