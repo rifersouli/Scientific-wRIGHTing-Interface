@@ -7,6 +7,7 @@
 - Python 3.8+
 - Node.js 16+
 - MySQL/MariaDB
+- Clonar e descompactar o repositório
 
 ### Setup Automatizado (Recomendado)
 
@@ -15,6 +16,7 @@ Para uma instalação mais fácil, use os scripts de setup:
 **Windows:**
 ```bash
 .\setup.bat
+.\start.bat
 ```
 
 **Linux/macOS:**
@@ -23,24 +25,16 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-Os scripts irão (eu espero):
+Os scripts irão:
 - Verificar se todas as dependências estão instaladas
 - Configurar o ambiente Python e instalar dependências
 - Instalar dependências do Node.js
-- Criar o banco de dados automaticamente
-- Carregar o schema e os dados
-- Fornecer instruções para iniciar a aplicação
+- Criar e alimentar o banco de dados
+- Iniciar a aplicação
 
 ### Setup Manual
 
-### 1. Clone o repositório
-
-```bash
-git clone <your-repository-url>
-cd Scientific-wRIGHTing-Interface-main
-```
-
-### 2. Setup do Backend
+### 1. Setup do Backend
 
 ```bash
 # Navegue para o Backend
@@ -69,7 +63,7 @@ python app.py
 
 O Backend ficará disponível na URL `http://localhost:5000`
 
-### 3. Setup do Frontend
+### 2. Setup do Frontend
 
 ```bash
 # Navegue para o Frontend (em um novo terminal)
@@ -117,6 +111,8 @@ Scientific-wRIGHTing-Interface-main/
 
 ## Licença de uso
 
-This project is part of academic research. Please cite appropriately if used in research. (Texto pronto em inglês, quando o trabalho estiver publicado eu vou colocar o link aqui)
+Este projeto é parte de um projeto acadêmico. Por favor, cite o trabalho de maneira apropriado se for utilizá-lo em uma pesquisa.
+
+Quando publicado, o link para a pesquisa será disponibilizado neste local.
 
 **Se você um dia usar essa aplicação, eu espero que ela atenda suas necessidades!**
