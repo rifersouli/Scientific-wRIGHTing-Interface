@@ -11,7 +11,9 @@
 
 ### Setup Automatizado (Recomendado)
 
-Para uma instalação mais fácil, caso você seja usuário de Windows, use os scripts de setup:
+Para uma instalação mais fácil, caso você seja usuário do sistema operacional Windows, use os scripts de setup abaixo. 
+
+IMPORTANTE: É necessário possuir um banco de dados configurado com um usuário chamado 'root' em seu computador
 
 ```bash
 .\setup.bat
