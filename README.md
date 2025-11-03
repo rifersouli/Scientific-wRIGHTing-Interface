@@ -11,18 +11,11 @@
 
 ### Setup Automatizado (Recomendado)
 
-Para uma instalação mais fácil, use os scripts de setup:
+Para uma instalação mais fácil, caso você seja usuário de Windows, use os scripts de setup:
 
-**Windows:**
 ```bash
 .\setup.bat
 .\start.bat
-```
-
-**Linux/macOS:**
-```bash
-chmod +x setup.sh
-./setup.sh
 ```
 
 Os scripts irão:
@@ -94,7 +87,7 @@ Scientific-wRIGHTing-Interface-main/
 │   │   └── static/              # Arquivos estáticos do React
 │   ├── app.py                   # Local de entrada da aplicação
 │   ├── load_full_schema.py      # Script que carrega o banco de dados
-│   └── requirements.txt         # Dependênciad do Python
+│   └── requirements.txt         # Dependências do Python
 ├── frontend/
 │   └── react-flask-app/
 │       ├── src/
